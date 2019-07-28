@@ -1,0 +1,14 @@
+server:
+  port: 7777
+  context-path: /scala-boot
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: letl
+    password: Gst2019!Data.2018
+    url: jdbc:mysql://120.76.216.102:3306/test?useSSL=false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
