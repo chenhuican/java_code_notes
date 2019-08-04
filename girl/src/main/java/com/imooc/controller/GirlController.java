@@ -36,13 +36,11 @@ public class GirlController {
 
     /**
      * 添加女生
-     * @param cupSize
-     * @param age
-     * @return
+     *
      */
     @RequestMapping(value = "/girls", method = RequestMethod.POST)
     public Object girlAdd(@Valid Girl girl, BindingResult bindingResult) {
-        //使用@Valid注解验证，提交的信息，返回结果给 BindingResult 当发生错误时
+        //使用@Valid注解验证，提交的信息，当发生错误时,返回结果给 BindingResult。
         if(bindingResult.hasErrors()) {
 //            Result result = new Result();
 //            result.setCode(1);
@@ -110,4 +108,5 @@ public class GirlController {
         girlService.getAge(id);
 
     }
+
 }

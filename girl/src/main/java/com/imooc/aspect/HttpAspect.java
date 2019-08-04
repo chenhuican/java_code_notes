@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 使用AOP编程方式
- * @Before 在方法执行前记录日志
+ * @Before 在方法执行前后记录日志
  */
 @Aspect
 @Component

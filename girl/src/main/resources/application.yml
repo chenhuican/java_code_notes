@@ -5,7 +5,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: letl
     password: Gst2019!Data.2018
-    url: jdbc:mysql://120.76.216.102:3306/test?useSSL=false
+    url: jdbc:mysql://120.76.216.102:3306/test?useSSL=false&characterEncoding=utf-8
   jpa:
     hibernate:
       ddl-auto: update
