@@ -24,6 +24,7 @@ public class ErrorControllerAdvice {
 
         ErrorEnum errorEnum = ErrorEnum.getByCode(errorCode);
 
+
         attrs.put("message", errorEnum.getMessage());
         attrs.put("code",errorEnum.getCode());
         attrs.put("canRetry",errorEnum.isCanRetry());

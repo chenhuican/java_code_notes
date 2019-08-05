@@ -1,5 +1,6 @@
 package com.imooc.entity;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import javax.persistence.Entity;
@@ -14,6 +15,8 @@ public class Product {
     private String id;
     private String name;
 
+    // swagger 文档说明
+    @ApiModelProperty(value = "状态", dataType = "com.imooc.entity.enums.ProductStatus")
     private  String status;
 
     private BigDecimal thresholdAmount;
@@ -32,19 +35,13 @@ public class Product {
     public Product(){}
 
     public Product(String id, String name, String status,
-                   BigDecimal thresholdAmount, BigDecimal stepAmount, Integer lockTerm, BigDecimal rewardRate, String memo, Date createAt, Date upDateAt, String createUser, String updateUser) {
+                   BigDecimal thresholdAmount, BigDecimal stepAmount, BigDecimal rewardRate) {
         this.id = id;
         this.name = name;
         this.status = status;
         this.thresholdAmount = thresholdAmount;
         this.stepAmount = stepAmount;
-        this.lockTerm = lockTerm;
         this.rewardRate = rewardRate;
-        this.memo = memo;
-        this.createAt = createAt;
-        this.upDateAt = upDateAt;
-        this.createUser = createUser;
-        this.updateUser = updateUser;
     }
 
     @Override

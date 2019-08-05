@@ -6,4 +6,5 @@ include 'manager'
 include 'quartz'
 include 'swagger'
 include 'entity'
+include 'swagger'
 

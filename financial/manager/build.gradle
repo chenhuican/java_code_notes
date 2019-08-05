@@ -11,5 +11,6 @@ repositories {
 
 dependencies {
     compile project(":entity")
+    compile project(":swagger")
     compile libs.mysql
 }
